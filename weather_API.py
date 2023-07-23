@@ -11,7 +11,7 @@ API_KEY = "<Enter your API Key Here>"
 print("===========================")
 print("Please select from the menu: ")
 print("1. Current weather")
-print("2. Current weather + 5 day forecast")
+print("2. 5 day forecast")
 print("")
 print("Q. Quit")
 print("===========================")
