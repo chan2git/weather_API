@@ -3,8 +3,8 @@ import requests
 import json
 import datetime                                                                                 
 
-### Enter OpenWeatherMap API Key
-API_KEY = "8fdb41454fbd17debdfe2662f397294a"
+### Enter your OpenWeatherMap API Key before running this script. See Footnotes (Line 60)
+API_KEY = "<Enter your API Key Here>"
 
 
 ### Code block for menu
