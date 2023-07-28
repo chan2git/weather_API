@@ -2,13 +2,20 @@
 A script that uses the OpenWeatherMap API to return current weather conditions for a specified city.
 
 
+# Features Added
+User input validation - Added 07/23/2023
+
+Added a menu for selecting features - Added 07/23/2023
+
+Added feature to return 5 day forecast - Added 07/23/2023
+
+Added feature to allow user to exit - Added 07/23/2023
+
+Provide a list of available cities to choose from - Added 07/27/2023
+
 # Future Developments
-User input validation - 07/23/2023
+Retrieve historical weather data for specified city
 
-Added a menu for selecting features - 07/23/2023
+Host on the internet
 
-Added feature to return 5 day forecast - 07/23/2023
-
-Added feature to allow user to exit - 07/23/2023
-
-Provide a list of available cities to choose from - TBD
+Front-end/GUI interface
