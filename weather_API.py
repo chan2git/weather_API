@@ -1,7 +1,11 @@
-### Import requests module
+### Import modules, functions
 import requests
 import json
-import datetime                                                                                 
+import datetime
+from city_extract import print_us_cities, print_international_cities
+
+### city.list.json (sourced from OpenWeatherMap) and imported functions are required to run menu option 3/4. Ensure files are in the same directory/repo
+json_file_path = 'city.list.json'
 
 ### Enter your OpenWeatherMap API Key before running this script. See Footnotes (Line 60)
 API_KEY = "<Enter your API Key Here>"
@@ -12,6 +16,8 @@ print("===========================")
 print("Please select from the menu: ")
 print("1. Current weather")
 print("2. 5 day forecast")
+print("3. List available US cities")
+print("4. List available international cities")
 print("")
 print("Q. Quit")
 print("===========================")
@@ -163,9 +169,21 @@ while True:
 
             print("===========================")
             break
+
+    elif user_choice == "3":
+        ### Calls imported function that prints list of available US cities
+        print_us_cities(json_file_path)
+        break
+
+    elif user_choice == "4":
+        ### Calls imported function that prints list of available international cities
+        print_international_cities(json_file_path)
+        break
+
     elif user_choice.lower() == "q":
         print("Quitting...goodbye!")
         break
+
     else:
         print("Error. Please select from the menu")
         print("===========================")
@@ -194,8 +212,8 @@ while True:
 ################################################ FOOTNOTES ################################################
 
 #############################
-# Version:    1.01          #
-# Date:       07/23/2023    #
+# Version:    1.02          #
+# Date:       07/27/2023    #
 # Coder:      CH @chan2git  #
 #############################
 
